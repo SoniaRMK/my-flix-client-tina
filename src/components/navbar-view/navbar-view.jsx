@@ -17,14 +17,22 @@ const onLoggedOut = () => {
         <Navbar.Brand href="/">myFlix</Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
-          {/* <Nav
+          <Nav
             className="me-auto my-2 my-lg-0"
             style={{ maxHeight: '100px' }}
             navbarScroll
-          > */}
+          >
             <Nav.Link href="/profile">Profile</Nav.Link>
             
-          {/* </Nav> */}
+          </Nav>
+          <Nav
+            className="me-auto my-2 my-lg-0"
+            style={{ maxHeight: '100px' }}
+            navbarScroll
+          >
+            <Nav.Link href="/user">user</Nav.Link>
+            
+          </Nav>
           <NavItem>
             {/* Only show "Logged in as:" when user is logged in */}
           {Username && (
