@@ -10,7 +10,7 @@ import {Link} from "react-router-dom";
 
 
 import './movie-view.scss';
-import { Image } from 'react-bootstrap';
+// import { Image } from 'react-bootstrap';
 
 export class MovieView extends React.Component {
 

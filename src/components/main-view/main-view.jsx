@@ -134,7 +134,7 @@ class MainView extends React.Component {
                 </Col>
               }
               } />
-              <Route path="/profile" render={({ match, history }) => {
+              <Route path="/profile" render={() => {
                 if (!user) 
                 return 
                 <Col>
@@ -142,7 +142,7 @@ class MainView extends React.Component {
                 </Col>
                 if (movies.length === 0) return <div className="main-view" />;
                 return <Col md={8}>
-                  <ProfileView history={history} movies={movies} movie={movies.find(m => m._id === match.params.movieId)} />
+                  <ProfileView movies={movies} movie={movies} />
                 </Col>
               }} />
             </Row>
