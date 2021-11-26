@@ -25,14 +25,6 @@ const onLoggedOut = () => {
             <Nav.Link href="/profile">Profile</Nav.Link>
             
           </Nav>
-          <Nav
-            className="me-auto my-2 my-lg-0"
-            style={{ maxHeight: '100px' }}
-            navbarScroll
-          >
-            <Nav.Link href="/user">user</Nav.Link>
-            
-          </Nav>
           <NavItem>
             {/* Only show "Logged in as:" when user is logged in */}
           {Username && (
